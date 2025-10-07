@@ -1,0 +1,195 @@
+.list-item {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.list-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.list-item-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.category-badge {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.category-badge.electronics {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.category-badge.fashion {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+.category-badge.home {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.category-badge.sports {
+  background: #fed7aa;
+  color: #92400e;
+}
+
+.category-badge.books {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.list-item-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.list-item-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star {
+  color: #d1d5db;
+  font-size: 1.125rem;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+.rating-value {
+  margin-left: 8px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.timestamp {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  font-family: 'Courier New', monospace;
+}
+
+.list-item-pricing {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.price-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.original-price {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.discount {
+  font-size: 0.875rem;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.final-price {
+  font-size: 1.25rem;
+  color: #059669;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.list-item-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.list-item-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+
+.btn-like {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.btn-like:hover {
+  background: #e5e7eb;
+}
+
+.btn-like.liked {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.btn-counter {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.btn-counter:hover {
+  background: #bfdbfe;
+}
+
+.btn-action {
+  background: #6366f1;
+  color: white;
+}
+
+.btn-action:hover {
+  background: #4f46e5;
+}
+
+.list-item-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.item-id {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-family: 'Courier New', monospace;
+}

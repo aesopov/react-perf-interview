@@ -1,0 +1,54 @@
+.fps-counter {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.fps-gauge-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+}
+
+.fps-gauge {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.fps-value {
+  text-align: center;
+  color: white;
+}
+
+.fps-number {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1;
+  font-family: 'Courier New', monospace;
+}
+
+.fps-label {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.fps-status {
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-grow: 1;
+}

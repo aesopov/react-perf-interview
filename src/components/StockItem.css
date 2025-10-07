@@ -1,0 +1,187 @@
+.stock-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stock-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.stock-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stock-symbol {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  font-family: 'Courier New', monospace;
+}
+
+.stock-company {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.stock-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.sector-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sector-badge.technology {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.sector-badge.finance {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+.sector-badge.healthcare {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.sector-badge.energy {
+  background: #fed7aa;
+  color: #92400e;
+}
+
+.sector-badge.consumer {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.exchange-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.stock-price-section {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  font-family: 'Courier New', monospace;
+}
+
+.price-change {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.price-change.positive {
+  color: #16a34a;
+}
+
+.price-change.negative {
+  color: #dc2626;
+}
+
+.stock-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.stat-value {
+  font-size: 0.875rem;
+  color: #1f2937;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.stock-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.stock-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+
+.btn-watchlist {
+  background: #f3f4f6;
+  color: #374151;
+  flex: 1;
+}
+
+.btn-watchlist:hover {
+  background: #e5e7eb;
+}
+
+.btn-watchlist.active {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.btn-trade {
+  background: #6366f1;
+  color: white;
+  flex: 1;
+}
+
+.btn-trade:hover {
+  background: #4f46e5;
+}
